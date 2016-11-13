@@ -1,0 +1,70 @@
+body {
+  font-size: 1.2em;
+}
+
+div.tabs > a, div.tabs > button {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+div.tabs {
+  margin-bottom: 10px;
+}
+
+.activeTab {
+  font-weight: bold;
+  color: darkgreen;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: olivedrab;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button.menu {
+  border-radius: 4px;
+  background-color: olivedrab;
+  border: darkslategray;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 5px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 15px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
